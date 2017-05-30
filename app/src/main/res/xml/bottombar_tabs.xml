@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/colorOne"
+        icon="@drawable/ic_home_white"
+        id="@+id/navigation_home"
+        title="@string/title_home"
+        activeColor="#fafafa"/>
+    <tab
+        barColorWhenSelected="@color/colorTwo"
+        icon="@drawable/ic_favorite_white"
+        id="@+id/navigation_favorite"
+        title="@string/title_favorites"
+        activeColor="#fafafa"/>
+
+    <tab
+        barColorWhenSelected="@color/colorThree"
+        icon="@drawable/ic_map_white"
+        id="@+id/navigation_map"
+        title="@string/title_map"
+        activeColor="#fafafa"/>
+</tabs>

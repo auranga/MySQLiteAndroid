@@ -20,18 +20,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*TabLayout.Tab tabCall = tableLayout.getTabAt(0);
-        tabCall.setIcon(R.drawable.selector_home);*/
+        DataBaseManager manager = new DataBaseManager(this);
+
+        manager.addPlace("El nombre 1","El estado","El Mun","La Foto","121212.1212","12212");
+        manager.addPlace("El nombre 2","El estado","El Mun","La Foto","121212.1212","12212");
+        manager.addPlace("El nombre 3","El estado","El Mun","La Foto","121212.1212","12212");
+
+        manager.deletePlace("El nombre 2");
+        manager.modifyPlaceState("El nombre 3","Nuevo estado","El Mun","La Foto","121212.1212","12212");
+
 
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelected(@IdRes int tabId) {
-
-                /*for (int i = 0; i < bottomBar.getTabCount(); i++) {
-                    BottomBarTab tab = bottomBar.getTabAtPosition(0);
-                    tab.findViewById(com.roughike.bottombar.R.id.bb_bottom_bar_icon).setSelected(tab.getId() == tabId);
-                }*/
 
                 selectedFragment = null;
 

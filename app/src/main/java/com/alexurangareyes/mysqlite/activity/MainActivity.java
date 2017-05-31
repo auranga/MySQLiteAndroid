@@ -1,4 +1,4 @@
-package com.alexurangareyes.mysqlite;
+package com.alexurangareyes.mysqlite.activity;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -6,6 +6,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import com.alexurangareyes.mysqlite.R;
+import com.alexurangareyes.mysqlite.fragment.FavoritesFragment;
+import com.alexurangareyes.mysqlite.fragment.HomeFragment;
+import com.alexurangareyes.mysqlite.fragment.MapFragment;
+import com.alexurangareyes.mysqlite.fragment.PlacesFragment;
+import com.alexurangareyes.mysqlite.model.DataBaseManager;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -20,14 +26,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        setTitle("My Favourite places");*/
+
         DataBaseManager manager = new DataBaseManager(this);
 
-        manager.addPlace("El nombre 1","El estado","El Mun","La Foto","121212.1212","12212");
-        manager.addPlace("El nombre 2","El estado","El Mun","La Foto","121212.1212","12212");
-        manager.addPlace("El nombre 3","El estado","El Mun","La Foto","121212.1212","12212");
+        /*manager.addPlace("El nombre 1","El estado","El Mun",0,"121212.1212","12212");*/
 
-        manager.deletePlace("El nombre 2");
-        manager.modifyPlaceState("El nombre 3","Nuevo estado","El Mun","La Foto","121212.1212","12212");
+        //manager.deletePlace("El nombre 2");
+        //manager.modifyPlaceState("El nombre 3","Nuevo estado","El Mun",1,"121212.1212","12212");
+
+        //Log.i("myTag", "manager.getProfilesCount() = " + String.valueOf(manager.getProfilesCount()));
 
 
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
@@ -40,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (tabId) {
                     case R.id.navigation_home:
                         selectedFragment = HomeFragment.newInstance();
+                        break;
+                    case R.id.navigation_places:
+                        selectedFragment = PlacesFragment.newInstance();
                         break;
                     case R.id.navigation_favorite:
                         selectedFragment = FavoritesFragment.newInstance();

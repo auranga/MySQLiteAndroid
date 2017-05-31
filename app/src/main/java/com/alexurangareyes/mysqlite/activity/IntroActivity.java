@@ -1,4 +1,4 @@
-package com.alexurangareyes.mysqlite;
+package com.alexurangareyes.mysqlite.activity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -6,8 +6,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
+import com.alexurangareyes.mysqlite.R;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+
+/**
+ * Created by alexurangareyes on 5/31/17.
+ */
 
 public class IntroActivity extends AppCompatActivity {
 

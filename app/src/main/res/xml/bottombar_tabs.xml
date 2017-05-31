@@ -8,13 +8,20 @@
         activeColor="#fafafa"/>
     <tab
         barColorWhenSelected="@color/colorTwo"
+        icon="@drawable/ic_place_white"
+        id="@+id/navigation_places"
+        title="@string/title_places"
+        activeColor="#fafafa"/>
+
+    <tab
+        barColorWhenSelected="@color/colorThree"
         icon="@drawable/ic_favorite_white"
         id="@+id/navigation_favorite"
         title="@string/title_favorites"
         activeColor="#fafafa"/>
 
     <tab
-        barColorWhenSelected="@color/colorThree"
+        barColorWhenSelected="@color/colorFour"
         icon="@drawable/ic_map_white"
         id="@+id/navigation_map"
         title="@string/title_map"

@@ -13,7 +13,7 @@ import com.alexurangareyes.mysqlite.model.DataBaseManager;
 public class DbHelper extends SQLiteOpenHelper{
 
     private static final String DB_NAME = "Places.sqlite";
-    private static final int DB_SCHEMA_VERSION = 5;
+    private static final int DB_SCHEMA_VERSION = 6;
 
 
     public DbHelper(Context context) {

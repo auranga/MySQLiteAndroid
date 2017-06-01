@@ -95,7 +95,7 @@ public class placesAdapter extends RecyclerView.Adapter<placesAdapter.ViewHolder
         final Place place = arraylist.get(position);
 
         TextView textView = viewHolder.nameTextView;
-        textView.setText(place.getState());
+        textView.setText(place.getMucicipality()+" "+ place.getState());
 
         TextView textView2 = viewHolder.nameTextView2;
         textView2.setText(place.getName());

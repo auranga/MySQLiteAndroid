@@ -40,7 +40,7 @@ public class DataBaseManager {
     //manager.addPlace("El nombre 1","El estado","El Mun",0,"121212.1212","12212");
 
     public static final String INSERT_DEFAULT_ROWS = "INSERT INTO " + TABLE_NAME + " (" + CN_NAME + "," + CN_STATE + "," + CN_MUNICIPALITY + "," + CN_FAV + ") " +
-            "VALUES ('Palacio Municipal','Coahuila','Saltillo',0),('Cristo de la noas','Coahuila','Torreon',1),('Plaza de las culturas','Coahuila','Piedras Negras',0);";
+            "VALUES ('Palacio Municipal','Coahuila','Saltillo',0),('Cristo de la noas','Coahuila','Torreon',0),('Plaza de las culturas','Coahuila','Piedras Negras',1);";
 
     public DataBaseManager(Context context) {
 

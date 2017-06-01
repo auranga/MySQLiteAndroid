@@ -5,7 +5,20 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.alexurangareyes.mysqlite.activity.MainActivity">
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />-->
+
 
     <!-- This could be your fragment container, or something -->
     <FrameLayout
@@ -13,9 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottomBar"
+        android:layout_marginTop="?attr/actionBarSize"
+
         />
 
-    <android.support.design.widget.FloatingActionButton
+    <!--<android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fab"
@@ -27,7 +42,7 @@
         android:layout_marginBottom="70dp"
         android:layout_marginEnd="10dp"
         android:layout_above="@+id/bottomBar"
-        />
+        />-->
 
 
     <com.roughike.bottombar.BottomBar
@@ -36,6 +51,9 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         app:bb_behavior="underNavbar"
-        app:bb_tabXmlResource="@xml/bottombar_tabs" />
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        />
+
+    <!-- android:layout_gravity="bottom"-->
 
 </RelativeLayout>

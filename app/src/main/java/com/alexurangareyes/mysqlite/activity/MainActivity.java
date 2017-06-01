@@ -9,9 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.alexurangareyes.mysqlite.R;
 import com.alexurangareyes.mysqlite.fragment.FavoritesFragment;
 import com.alexurangareyes.mysqlite.fragment.HomeFragment;
-import com.alexurangareyes.mysqlite.fragment.MapFragment;
 import com.alexurangareyes.mysqlite.fragment.PlacesFragment;
-import com.alexurangareyes.mysqlite.model.DataBaseManager;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
@@ -30,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setTitle("My Favourite places");*/
 
-        DataBaseManager manager = new DataBaseManager(this);
+
 
         /*manager.addPlace("El nombre 1","El estado","El Mun",0,"121212.1212","12212");*/
 
         //manager.deletePlace("El nombre 2");
-        //manager.modifyPlaceState("El nombre 3","Nuevo estado","El Mun",1,"121212.1212","12212");
+        //manager.modifyPlaceFav("El nombre 3","Nuevo estado","El Mun",1,"121212.1212","12212");
 
         //Log.i("myTag", "manager.getProfilesCount() = " + String.valueOf(manager.getProfilesCount()));
 
@@ -57,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_favorite:
                         selectedFragment = FavoritesFragment.newInstance();
                         break;
-                    case R.id.navigation_map:
+                    /*case R.id.navigation_map:
                         selectedFragment = MapFragment.newInstance();
-                        break;
+                        break;*/
                     default:
                         selectedFragment = HomeFragment.newInstance();
                         break;

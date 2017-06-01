@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#0077CE</color>
     <color name="colorAccent">#FFC400</color>
 
-    <color name="colorOne">#F44336</color>
+    <color name="colorOne">#9C27B0</color>
     <color name="colorTwo">#E91E63</color>
-    <color name="colorThree">#9C27B0</color>
+    <color name="colorThree">#F44336</color>
     <color name="colorFour">#3F51B5</color>
 
 </resources>

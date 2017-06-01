@@ -6,9 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>-->
+
     </style>
 
-    <style name="AppTheme.TransNav" parent="AppTheme" />
+    <style name="AppTheme.TransNav" parent="AppTheme">
+
+
+    </style>
 
 
     <!-- Intro Activity -->
@@ -19,7 +26,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-
+    <style name="AppThemex.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppThemex.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

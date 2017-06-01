@@ -9,6 +9,8 @@ public class Place {
     protected int id;
     protected String name;
     protected String state;
+    protected String municipality;
+    protected int fav;
 
     public void setId(int _id) {
         this.id = _id;
@@ -22,6 +24,15 @@ public class Place {
         this.state = state;
     }
 
+    public void setMunicipality(String municipality) {
+        this.municipality = municipality;
+    }
+
+    public void setFav(int fav) {
+        this.fav = fav;
+    }
+
+
     public int getId() {
         return this.id;
     }
@@ -32,6 +43,14 @@ public class Place {
 
     public String getState() {
         return this.state;
+    }
+
+    public int getFav() {
+        return this.fav;
+    }
+
+    public String getMucicipality() {
+        return this.municipality;
     }
 
 }

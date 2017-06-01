@@ -20,10 +20,10 @@
         title="@string/title_favorites"
         activeColor="#fafafa"/>
 
-    <tab
+    <!--<tab
         barColorWhenSelected="@color/colorFour"
         icon="@drawable/ic_map_white"
         id="@+id/navigation_map"
         title="@string/title_map"
-        activeColor="#fafafa"/>
+        activeColor="#fafafa"/>-->
 </tabs>
